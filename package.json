@@ -1,0 +1,24 @@
+{
+  "name": "apigroceries",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "Jose Angel Fosado Animas",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "^8.1.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.1",
+    "nodemon": "^3.0.3"
+  }
+}
