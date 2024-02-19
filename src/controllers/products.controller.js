@@ -5,7 +5,7 @@ export const getAllProducts = (req, res) => {
   productDao
     .getAll()
     .then((products) => {
-      res.json("../src/views/index.ejs", { products});
+      res.render("../src/views/index.ejs", { products});
     })
     .catch((err) => {
       res.json(err);
