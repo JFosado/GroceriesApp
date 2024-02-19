@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "build":"npm i",
     "start": "node src/index.js"
   },
   "keywords": [],
