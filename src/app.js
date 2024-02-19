@@ -3,9 +3,7 @@ import morgan from "morgan";
 import ejs from "ejs";
 import productsRouter from "./routes/products.routes.js";
 
-import { config } from "dotenv";
 
-config();
 
 const app = express();
 
