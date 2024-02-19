@@ -15,6 +15,6 @@ router.get("/:bc", getOneProduct);
 router.get("/delete/:bc", getOneDeleteProduct);
 router.post("/", insertProduct);
 router.post("/:bc", updateProduct);
-router.delete("/:bc", deleteProduct);
+
 
 export default router;
