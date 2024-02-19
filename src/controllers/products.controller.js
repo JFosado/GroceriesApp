@@ -37,7 +37,7 @@ export const insertProduct = (req, res) => {
     .insertProduct(req.body)
     .then((result) => {
       if (result) {
-        res.redirect("api/products");
+        res.redirect("/");
       }
     })
     .catch((err) => {
@@ -51,7 +51,7 @@ export const updateProduct = (req, res) => {
   productDao
     .updateProduct(req.params.bc, req.body)
     .then((result) => {
-      if (result) res.redirect("/api/products/");
+      if (result) res.redirect("/");
     })
     .catch((err) => {
       res.json({
@@ -64,7 +64,7 @@ export const deleteProduct = (req, res) => {
   productDao
     .deleteProduct(req.params.bc)
     .then((result) => {
-      if (result) res.redirect("/api/products/");
+      if (result) res.redirect("/");
       
     })
     .catch((err) => {
@@ -82,7 +82,7 @@ export const deleteProduct = (req, res) => {
     .then((product) => {
       if (product) {
         console.log("ELIMINADO");
-        res.redirect("/api/products/");
+        res.redirect("/");
          
       } else {
         res.render("../src/views/index.ejs", { products });
