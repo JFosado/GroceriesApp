@@ -11,8 +11,9 @@
 <body>
 
     <form action="/<%=product.barcode%>" method="post" >
-        <input type="text" name="description" placeholder="Description" value="<%= product.description %>">
+        
         <input type="text" name="barcode" placeholder="Barcode" value="<%= product.barcode %>">
+        <input type="text" name="description" placeholder="Description" value="<%= product.description %>">
         <input type="text" name="brand" placeholder="Brand" value="<%= product.brand %>">
         <input type="number" name="price" placeholder="Precio" value="<%= product.price %>">
         <input type="number" name="cost" placeholder="Costo" value="<%= product.cost %>">
