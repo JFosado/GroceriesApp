@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <form action="/<%=product.barcode%>" method="post">
+    <form action="/<%=product.barcode%>" method="post" data-theme="b">
         <input type="text" name="barcode" placeholder="Barcode" value="<%= product.barcode %>">
         <input type="text" name="brand" placeholder="Brand" value="<%= product.brand %>">
         <input type="number" name="price" placeholder="Precio" value="<%= product.price %>">
